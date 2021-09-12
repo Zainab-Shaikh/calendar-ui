@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  text-align: center;
+}
+.parent {
+  width: 400px;
+  height: 400px;
+  color: white;
+  background-color: black;
+}
+.row {
+  display: flex;
+}
+
+.child-box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(226, 116, 116);
+  transition: transform 1s cubic-bezier(0, 0.38, 0, 1.17);
+}
+.day-name {
+  margin-top: 3rem;
+  font-size: large;
+}
+.date {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 0px 0.5rem;
+}
+.child-box:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+  box-shadow: -5px -5px 50px -20px rgb(175, 53, 53) inset;
+}
